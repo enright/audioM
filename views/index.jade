@@ -6,11 +6,11 @@ block content
   script(type="text/javascript")
     $(function() { loadedAudio = audioMonad({}).masterGain(1.0).sounds(sounds); })
   button(id='win') Play Win
-  button(id='roar') Play Roar
-  button(id='dahdahdah1') Play Coin
-  button(id='dahdahdah1-2') Play Coin No Master
+  button(id='dahdahdah1') Play Coin 1
+  button(id='dahdahdah2') Play Coin 2
+  button(id='dahdahdah1-no-master') Play Coin 1 No Master
   script(type="text/javascript")
     $('#win').click(function () { loadedAudio.play('win.m4a'); })    
-    $('#roar').click(function () { loadedAudio.play('roar.m4a'); })
     $('#dahdahdah1').click(function () { loadedAudio.play('dahdahdah1.m4a'); })
-    $('#dahdahdah1-2').click(function () { audioMonad({}).setAudioBuffers(loadedAudio.getAudioBuffers()).play('dahdahdah1.m4a'); })
+    $('#dahdahdah2').click(function () { loadedAudio.play('dahdahdah2.m4a'); })
+    $('#dahdahdah1-no-master').click(function () { audioMonad({}).setAudioBuffers(loadedAudio.getAudioBuffers()).play('dahdahdah1.m4a'); })
