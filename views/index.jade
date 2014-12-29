@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  script(type="text/javascript")
+    $(function() { loadedAudio = audioMonad({}).masterGain(1.0).sounds(sounds); })
+  button(id='win') Play Win
+  button(id='roar') Play Roar
+  button(id='dahdahdah1') Play Coin
+  button(id='dahdahdah1-2') Play Coin No Master
+  script(type="text/javascript")
+    $('#win').click(function () { loadedAudio.play('win.m4a'); })    
+    $('#roar').click(function () { loadedAudio.play('roar.m4a'); })
+    $('#dahdahdah1').click(function () { loadedAudio.play('dahdahdah1.m4a'); })
+    $('#dahdahdah1-2').click(function () { audioMonad({}).setAudioBuffers(loadedAudio.getAudioBuffers()).play('dahdahdah1.m4a'); })

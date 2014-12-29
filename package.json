@@ -1,0 +1,12 @@
+{
+    "name": "audioM",
+    "description": "a monad for the web audio api",
+    "version": "0.0.1",
+    "author": "Bill Enright <bill@yisup.com>",
+    "repository": "git://github.com/enright/audioM",
+    "devDependencies": {
+        "express": "4.10.x",
+        "jade": "1.8.x",
+        "body-parser": "1.10.x"
+    }
+}

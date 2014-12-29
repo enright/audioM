@@ -1,4 +1,4 @@
 audioM
 ======
 
-coming soon
+a monad for the web audio api
